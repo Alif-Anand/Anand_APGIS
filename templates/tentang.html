@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Peta Populasi Bali</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav>
+    <a href="/">Home 🏠</a>
+    <a href="/peta">Peta 📍</a>
+    <a href="/tentang">Informasi 🏝️</a>
+    <a href="/kontak">Kontak 🤙🏻</a>
+</nav>
+
+<div class="content-card">
+
+<h1>🗺️ Tentang WebGIS Populasi Bali</h1>
+
+<img src="{{ url_for('static', filename='bali.jpg') }}"
+class="about-image">
+
+<p>
+WebGIS Populasi Provinsi Bali merupakan aplikasi Sistem Informasi Geografis berbasis web yang dikembangkan untuk menyajikan informasi kependudukan Kabupaten/Kota di Provinsi Bali secara interaktif.
+</p>
+
+<p>
+Data yang digunakan berasal dari publikasi Proyeksi Penduduk Provinsi Bali Tahun 2026 yang diterbitkan oleh Badan Pusat Statistik (BPS). Data tersebut kemudian divisualisasikan dalam bentuk peta interaktif sehingga pengguna dapat memahami persebaran jumlah penduduk pada setiap wilayah dengan lebih mudah.
+</p>
+
+<h2>🧐 Tujuan WebGIS</h2>
+
+<ul>
+<li>Menyajikan informasi kependudukan secara spasial.</li>
+<li>Memvisualisasikan persebaran penduduk dalam bentuk peta interaktif.</li>
+<li>Meningkatkan pemahaman pengguna terhadap data geospasial.</li>
+
+</ul>
+
+<h2>ℹ️ Sumber Data</h2>
+
+<p>
+Data populasi diperoleh dari Badan Pusat Statistik (BPS) Provinsi Bali berupa data Proyeksi Penduduk Kabupaten/Kota Tahun 2026.
+</p>
+
+<h2>⚙ Teknologi yang Digunakan</h2>
+
+<div class="tech-grid">
+
+<div class="tech-box">
+<h3>Python</h3>
+<p>Pengolahan data dan backend.</p>
+</div>
+
+<div class="tech-box">
+<h3>Flask</h3>
+<p>Framework web aplikasi.</p>
+</div>
+
+<div class="tech-box">
+<h3>Folium</h3>
+<p>Pembuatan peta interaktif.</p>
+</div>
+
+<div class="tech-box">
+<h3>OpenStreetMap</h3>
+<p>Basemap peta digital.</p>
+</div>
+
+</div>
+
+</div>

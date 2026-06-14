@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Peta Populasi Bali</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav>
+    <a href="/">Home 🏠</a>
+    <a href="/peta">Peta 📍</a>
+    <a href="/tentang">Informasi 🏝️</a>
+    <a href="/kontak">Kontak 🤙🏻</a>
+</nav>
+
+<div class="map-header">
+
+    <h1>Peta Populasi Provinsi Bali</h1>
+
+    <p>
+        Sebaran jumlah penduduk Kabupaten/Kota di Provinsi Bali Tahun 2026
+    </p>
+
+</div>
+
+<div class="map-container">
+
+    <iframe
+        src="{{ url_for('static', filename='webgis_populasi_bali.html') }}"
+        width="80%"
+        height="700">
+    </iframe>
+</div>
+
+</body>
+</html>
